@@ -18,7 +18,6 @@ if (!fs.existsSync(distFolder)) {
 
 try {
   // 2. Get the remote URL
-  // We try to get it from the root repo
   let remoteUrl;
   try {
     remoteUrl = execSync('git config --get remote.origin.url', { encoding: 'utf8' }).trim();
@@ -32,25 +31,33 @@ try {
   // 3. Move to dist folder
   process.chdir(distFolder);
 
-  // 4. Initialize temporary git repo
-  // This "nuke and pave" approach avoids ENAMETOOLONG errors from gh-pages cleaning logic
+  // 4. CLEANUP: Remove existing .git directory if it exists to ensure a fresh start
+  // This fixes the "branch named gh-pages already exists" error
+  if (fs.existsSync('.git')) {
+    console.log('🧹 Cleaning up previous git record...');
+    // Recursive delete for .git folder
+    fs.rmSync('.git', { recursive: true, force: true });
+  }
+
+  // 5. Initialize temporary git repo
   execSync('git init');
-  execSync('git checkout -b gh-pages');
   
-  // 5. Add all files
+  // 6. Create and checkout the branch (using -B to force reset if it somehow still exists)
+  execSync('git checkout -B gh-pages');
+  
+  // 7. Add all files
   console.log('📄 Adding files...');
   execSync('git add -A');
 
-  // 6. Commit
-  // Config user is needed for CI or fresh envs, safe to set locally for this temp repo
+  // 8. Commit
   try {
     execSync('git config user.name "Deploy Bot"');
     execSync('git config user.email "deploy@taxheaven.com"');
-  } catch (e) { /* ignore if already set */ }
+  } catch (e) { /* ignore */ }
   
   execSync('git commit -m "Deploy to GitHub Pages"');
 
-  // 7. Push
+  // 9. Push
   console.log('⬆️  Pushing to GitHub Pages...');
   execSync(`git push -f ${remoteUrl} gh-pages`);
 
