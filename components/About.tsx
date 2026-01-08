@@ -1,4 +1,5 @@
 import React from 'react';
+import profileImg from '../img/profile.png';
 
 export const About: React.FC = () => {
   return (
@@ -11,7 +12,7 @@ export const About: React.FC = () => {
             <div className="relative z-10 rounded-lg overflow-hidden shadow-xl border-4 border-paper-100">
               {/* Profile Image */}
               <img 
-                src="/../img/profile.png" 
+                src={profileImg}
                 alt="Nasir Uddin Nayon" 
                 className="w-full h-auto aspect-[3/4] object-cover object-top bg-lawyer-green/10"
                 onError={(e) => {
@@ -57,7 +58,7 @@ export const About: React.FC = () => {
             
             <div className="grid grid-cols-2 gap-8 pt-8 border-t border-gold-500/20">
               <div>
-                <span className="block text-3xl md:text-4xl font-serif font-bold text-lawyer-green mb-1">7+</span>
+                <span className="block text-3xl md:text-4xl font-serif font-bold text-lawyer-green mb-1">15+</span>
                 <span className="text-[10px] md:text-xs text-lawyer-darkGreen/60 uppercase tracking-widest font-bold">Years Experience</span>
               </div>
               <div>

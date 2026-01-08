@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { NavLink as NavLinkType } from '../types';
+import iconImg from '../img/icon.png';
 
 const links: NavLinkType[] = [
   { label: 'Home', href: '/' },
@@ -48,7 +49,7 @@ export const Header: React.FC = () => {
           <Link to="/" className="group flex items-center gap-3 relative z-50">
             <div className={`w-8 h-8 md:w-10 md:h-10 border-2 rounded-full flex items-center justify-center transition-colors duration-300 overflow-hidden ${showBackground ? 'border-lawyer-green' : 'border-lawyer-green bg-paper-50'}`}>
                <img 
-                 src="/../img/icon.png" 
+                 src={iconImg}
                  alt="Logo" 
                  className="w-full h-full object-cover" 
                />

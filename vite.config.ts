@@ -1,18 +1,12 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// Shim process for TypeScript without @types/node
-// Using index signature to avoid 'Record' generic issues
-declare const process: { 
-  env: { [key: string]: string | undefined } 
-};
-
 export default defineConfig({
   plugins: [react()],
   base: '/taxfirm/',
   appType: 'spa',
   define: {
-    'process.env.API_KEY': JSON.stringify(process.env.API_KEY || "")
+    'process.env.API_KEY': JSON.stringify((process as any).env.API_KEY || "")
   },
   build: {
     rollupOptions: {
