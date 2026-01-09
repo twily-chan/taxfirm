@@ -49,11 +49,9 @@ We offer a comprehensive suite of financial services tailored to your needs:
 
 ## 🚀 How It Works
 
-1.  **Consultation:** Book a free 30-minute discovery call.
-2.  **Analysis:** Upload your documents to our secure portal.
-3.  **Processing:** Our experts prepare your returns and review them with you.
-4.  **Filing:** We file on your behalf once you approve.
-5.  **Support:** Year-round support for any notices or queries.
+1.  **Analysis:** Upload your documents to our secure portal.
+2.  **Processing:** I prepare your returns and review them with you.
+3.  **Filing:** We file on your behalf once you approve.
 
 ---
 
@@ -62,17 +60,9 @@ We offer a comprehensive suite of financial services tailored to your needs:
 Ready to reclaim your peace of mind? Reach out to us today!
 
 * **📍 Head Office:** 123 Finance Avenue, Valley District, City, Country
-* **📧 Email:** [hello@taxheavenvalley.com](mailto:hello@taxheavenvalley.com)
+* **📧 Email:** [hello@taxheavenvalley.com](mailto:mail2nasir@gmail.com)
 * **📱 Phone:** +1 (555) 123-4567
-* **🌐 Website:** [www.taxheavenvalley.com](https://www.example.com)
-
----
-
-## 🤝 Connect With Us
-
-[![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white)](https://facebook.com/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/)
-[![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/)
+* **🌐 Website:** [www.taxheavenvalley.com](https://www.taxheavenvalley.com)
 
 ---
 
