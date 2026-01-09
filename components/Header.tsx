@@ -120,8 +120,8 @@ export const Header: React.FC = () => {
 
           <div className="mt-auto">
             <h4 className="text-gold-600 font-bold uppercase tracking-widest text-xs mb-4">Contact</h4>
-            <p className="text-lawyer-darkGreen text-sm mb-2">+880 1711-000000</p>
-            <p className="text-lawyer-darkGreen text-sm">nasir@taxheavenvalley.com</p>
+            <p className="text-lawyer-darkGreen text-sm mb-2">+880 1712-413731</p>
+            <p className="text-lawyer-darkGreen text-sm">mail2nasir@gmail.com</p>
           </div>
         </div>
       </div>
