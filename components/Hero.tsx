@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import iconImg from '../img/icon.png';
+import iconImg from '../img/circleIcon.png';
 
 export const Hero: React.FC = () => {
   return (
@@ -24,7 +24,7 @@ export const Hero: React.FC = () => {
       <div className="relative z-20 container mx-auto px-6 pt-16 md:pt-20 text-center">
         
         {/* Logo/Icon Representation */}
-        <div className="mx-auto w-24 h-24 md:w-32 md:h-32 mb-6 md:mb-8 animate-fade-in-up">
+        <div className="border-2 rounded-full mx-auto w-24 h-24 md:w-32 md:h-32 mb-6 md:mb-8 animate-fade-in-up">
            <img 
              src={iconImg}
              alt="Tax Heaven Valley Logo" 

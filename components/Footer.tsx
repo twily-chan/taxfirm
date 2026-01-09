@@ -15,8 +15,8 @@ export const Footer: React.FC = () => {
               Providing sophisticated, personal counsel for complex tax matters. I stand between you and the complexity of the law, ensuring your wealth and legacy are protected with integrity.
             </p>
             <div className="flex space-x-4">
-              {['Likedin', 'Twitter', 'Facebook'].map(social => (
-                <a key={social} href="#" className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-lawyer-green flex items-center justify-center hover:bg-gold-500 hover:text-lawyer-darkGreen transition-colors">
+              {['Facebook'].map(social => (
+                <a key={social} href="https://www.facebook.com/profile.php?id=61565015577225" className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-lawyer-green flex items-center justify-center hover:bg-gold-500 hover:text-lawyer-darkGreen transition-colors">
                   <span className="sr-only">{social}</span>
                   <svg className="w-3 h-3 md:w-4 md:h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.492 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/></svg>
                 </a>

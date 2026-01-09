@@ -58,7 +58,7 @@ export const About: React.FC = () => {
             
             <div className="grid grid-cols-2 gap-8 pt-8 border-t border-gold-500/20">
               <div>
-                <span className="block text-3xl md:text-4xl font-serif font-bold text-lawyer-green mb-1">15+</span>
+                <span className="block text-3xl md:text-4xl font-serif font-bold text-lawyer-green mb-1">7+</span>
                 <span className="text-[10px] md:text-xs text-lawyer-darkGreen/60 uppercase tracking-widest font-bold">Years Experience</span>
               </div>
               <div>

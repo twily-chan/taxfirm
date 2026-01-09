@@ -78,11 +78,12 @@ export const Services: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div className="flex flex-wrap justify-center gap-6 md:gap-8">
           {services.map((service) => (
             <div 
               key={service.id} 
-              className="bg-paper-50 p-6 md:p-10 rounded-lg shadow-sm hover:shadow-xl transition-all duration-300 border border-gold-500/10 hover:border-gold-500 group relative overflow-hidden"
+              className="w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.34rem)] bg-paper-50 p-6 md:p-10 rounded-lg shadow-sm hover:shadow-xl transition-all duration-300 border border-gold-500/10 hover:border-gold-500 group relative overflow-hidden"
+              // className="bg-paper-50 p-6 md:p-10 rounded-lg shadow-sm hover:shadow-xl transition-all duration-300 border border-gold-500/10 hover:border-gold-500 group relative overflow-hidden"
             >
               <div className="w-12 h-12 md:w-14 md:h-14 bg-lawyer-green/5 rounded-full flex items-center justify-center text-lawyer-green mb-4 md:mb-6 group-hover:bg-lawyer-green group-hover:text-gold-500 transition-colors duration-300">
                 {service.icon}
